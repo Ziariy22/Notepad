@@ -1,0 +1,129 @@
+body {
+    margin: 0;
+    background-image: url(img/Notepad.jpg);
+    background-position: unset;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Raleway Dots', cursive;
+}
+
+p {
+    white-space: pre-wrap;
+}
+
+.header {
+    font-size: 35px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    color: dimgray;
+    background-color: whitesmoke;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+}
+
+#content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8%;
+}
+
+.noteContent {
+    height: 200px;
+    width: 200px;
+    background-color: rgba(230, 230, 230, 0.866);
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 10%;
+}
+
+.noteContent2 {
+    height: 200px;
+    width: 200px;
+    background-color: rgba(230, 230, 230, 0.866);
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+    margin: 25px;
+    padding: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 10%;
+    overflow-wrap: break-word;
+    overflow-y: scroll;
+}
+
+.menu {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+
+.menu a {
+    text-decoration: none;
+    margin: 20px;
+    color: cadetblue;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+    text-decoration-color: yellowgreen;
+    text-decoration-thickness: 3px;
+    opacity: 0.8;
+}
+
+.menu img {
+    cursor: pointer;
+}
+
+
+#title {
+    height: 30px;
+    outline-color: greenyellow;
+    border: none;
+    background: transparent;
+    font-weight: bold;
+}
+
+#note {
+    height: 30px;
+    outline-color: greenyellow;
+    border: none;
+    background: transparent;
+}
+
+.inputbutton {
+    background-color: greenyellow;
+    height: 25px;
+    border: none;
+    font-weight: bold;
+    border-radius: 20px;
+}
+
+.inputbutton:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.button {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.trash {
+    cursor: pointer;
+}

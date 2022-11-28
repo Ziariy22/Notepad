@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mobile.css" />
+    <script src="script.js"></script>
+    <script src="template.js"></script>
+    <title>Notizblock</title>
+  </head>
+  <body onload="render()">
+    <div id="header-main" class="header">
+      <span id="header-text">Notepad</span>
+    </div>
+    <!-- <div class="menu">
+      <img class="menu-icon" src="img/home.png" />
+      <a href="index.html">Startseite</a>
+      <img class="menu-icon" src="img/Trash.png" />
+      <a href="trash.html">Papierkorb</a>
+    </div> -->
+    <div id="content">
+      <form class="noteContent">
+        <input id="title" type="text" placeholder="Titel" />
+        <textarea id="note" type="text" placeholder="Notiz"></textarea>
+        <button class="inputbutton" type="button" onclick="addNote()">
+          Hinzufügen
+        </button>
+      </form>
+    </div>
+    <div id="noteList"></div>
+  </body>
+</html>
